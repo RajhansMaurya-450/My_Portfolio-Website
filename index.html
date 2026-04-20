@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Raj Hans Maurya – Full-Stack Developer portfolio showcasing MERN stack projects, skills, and experience." />
+  <title>Raj Hans Maurya | Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-theme="dark">
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">RAJ<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Raj Hans Maurya</h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-static">I build </span>
+        <span class="hero-typewriter" id="typewriter"></span>
+      </div>
+      <p class="hero-summary">Full-stack developer crafting scalable MERN stack applications with clean, maintainable
+        code and real-world impact.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <a href="./files/RAJ_HANS_MAURYA_Resume_.pdf" class="btn btn-outline">View Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:rajmaurya3091@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="www.linkedin.com/in/raj-hans-maurya-b840b3287" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/RajhansMaurya-450" target="_blank" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/966n1ZdjnK/" target="_blank" aria-label="LeetCode"><i
+            class="fas fa-code"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+          </div>
+          <div class="about-badges">
+            <span class="badge"><i class="fas fa-map-marker-alt"></i> Noida, India</span>
+            <span class="badge"><i class="fas fa-graduation-cap"></i> MCA 2025</span>
+            <span class="badge"><i class="fas fa-trophy"></i> 60+ LeetCode</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a <strong>Full-Stack Web Developer</strong> with hands-on experience building scalable applications
+            using the <strong>MERN stack</strong>, Node.js, and MongoDB.</p>
+          <p>I have strong understanding of RESTful API development, authentication & authorization, and database
+            design. I love creating responsive, performant interfaces with React, Tailwind CSS, and Bootstrap.</p>
+          <p>Completed my <strong>MCA at JSS Academy of Technical Education, Noida</strong> and actively
+            building real-world projects to sharpen my skills.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">60+</span><span class="stat-label">LeetCode</span></div>
+            <div class="stat"><span class="stat-num">MERN</span><span class="stat-label">Stack</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>JavaScript</span><span>Java</span><span>Python</span><span>C</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-palette"></i></div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span>React.js</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express.js</span><span>RESTful API</span><span>EJS</span><span>Spring</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>MongoDB</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
+          <h3>Dev Tools</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Docker</span><span>VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fas fa-users"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span>Problem Solving</span><span>Team Collaboration</span><span>Communication</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+
+      <div class="projects-carousel-wrapper">
+        <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous project">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="projects-carousel" id="projectsCarousel">
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-file-csv"></i></div>
+              <div class="project-links">
+                <a href="https://csv2json-sooty.vercel.app/" class="icon-btn" title="Live Demo"><i
+                    class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3>CSV2JSON</h3>
+            <p class="project-subtitle">Multi-Format Data Transformation Tool</p>
+            <p class="project-desc">Client-side data processing app supporting conversion between CSV, JSON, and SQL
+              INSERT formats with custom parsing algorithms handling edge cases like nested quotes and malformed data.
+            </p>
+            <div class="project-tags">
+              <span>React.js</span><span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card featured">
+            <div class="project-badge">Full-Stack</div>
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-hotel"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/RajhansMaurya-450/HotelsHub" class="icon-btn" title="GitHub"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>HotelsHub</h3>
+            <p class="project-subtitle">Hotel Listing &amp; Booking Platform</p>
+            <p class="project-desc">Full-stack hotel booking app enabling users to browse hotels, view listings, and
+              manage reservations. Secured with Passport.js for authentication, responsive UI with Bootstrap, MongoDB
+              for
+              data management.</p>
+            <div class="project-tags">
+              <span>MongoDB</span><span>Express.js</span><span>Node.js</span><span>Bootstrap</span><span>Passport.js</span>
+            </div>
+          </div>
+
+          <div class="project-card featured">
+            <div class="project-badge">Full-Stack</div>
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/RajhansMaurya-450/Kuberum-Web-app" class="icon-btn" title="GitHub"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Kuberum App</h3>
+            <p class="project-subtitle">Stock Trading Application</p>
+            <p class="project-desc">Full-stack stock trading simulator with RESTful APIs for trading logic, React.js
+              frontend, and Chart.js for data visualization. Features buy/sell operations, portfolio tracking, and order
+              history.</p>
+            <div class="project-tags">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Chart.js</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/RajhansMaurya-450/CodeSync" class="icon-btn" title="GitHub"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>CodeSync</h3>
+            <p class="project-subtitle">Real-Time Collaborative Code Editor</p>
+            <p class="project-desc">Real-time collaborative editor using Monaco Editor with Socket.IO for low-latency
+              bidirectional communication. Multi-user collaboration with conflict handling. Containerized with Docker.
+            </p>
+            <div class="project-tags">
+              <span>React.js</span><span>Node.js</span><span>Socket.IO</span><span>Docker</span><span>Monaco
+                Editor</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/RajhansMaurya-450/Weather-Apps" class="icon-btn" title="GitHub"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Weather App</h3>
+            <p class="project-subtitle">Real-Time Weather Monitoring</p>
+            <p class="project-desc">Responsive weather app using React.js integrated with OpenWeather API. Displays
+              temperature, humidity, and wind speed for any city. Component-based architecture with efficient state
+              management.</p>
+            <div class="project-tags">
+              <span>React.js</span><span>JavaScript</span><span>OpenWeather API</span>
+            </div>
+          </div>
+
+        </div><!-- /.projects-carousel -->
+
+        <button class="carousel-btn next" id="carouselNext" aria-label="Next project">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div><!-- /.projects-carousel-wrapper -->
+
+      <div class="carousel-dots" id="carouselDots"></div>
+
+    </div>
+  </section>
+
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023 – 2025</span>
+            <h3>Master of Computer Application</h3>
+            <p class="timeline-inst"><i class="fas fa-university"></i> JSS Academy of Technical Education</p>
+            <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Noida, India</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2020 – 2023</span>
+            <h3>Bachelor of Science</h3>
+            <p class="timeline-inst"><i class="fas fa-university"></i> Veer Bahadur Singh Purvanchal University</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">08/2025 – 02/2026</span>
+            <h3>MERN Stack Developer Course</h3>
+            <p class="timeline-inst"><i class="fas fa-chalkboard-teacher"></i> Apna College</p>
+            <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Noida, India</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">03/2025 - 05/2025</span>
+            <h3>Data Visualization (Certification)</h3>
+            <p class="timeline-inst"><i class="fas fa-certificate"></i> Anudip Foundation</p>
+            <p class="timeline-loc"><i class="fas fa-map-marker-alt"></i> Noida, India</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="contact-intro">I'm currently open to new opportunities. Whether you have a question, a project idea, or
+        just want to say hi — my inbox is always open!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:rajmaurya3091@gmail.com" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email</strong>
+              <p>rajmaurya3091@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+918423632541" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div><strong>Phone</strong>
+              <p>+91 8423632541</p>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><strong>Location</strong>
+              <p>Noida, India</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i>
+              LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://leetcode.com" target="_blank" class="social-btn"><i class="fas fa-code"></i> LeetCode</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message <i
+              class="fas fa-paper-plane"></i></button>
+          <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>Designed & Built by <strong>Raj Hans Maurya</strong></p>
+      <p class="footer-sub">© 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
