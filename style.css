@@ -1,6 +1,5 @@
-/* ============================================================
-   RESET & ROOT
-============================================================ */
+/* RESET & ROOT */
+
 *,
 *::before,
 *::after {
@@ -70,9 +69,7 @@ section {
   padding: 96px 0;
 }
 
-/* ============================================================
-   SECTION TITLE
-============================================================ */
+/* SECTION TITLE */
 .section-title {
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 800;
@@ -85,9 +82,8 @@ section {
   color: var(--accent2);
 }
 
-/* ============================================================
-   BUTTONS
-============================================================ */
+/*BUTTONS*/
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -129,9 +125,8 @@ section {
   justify-content: center;
 }
 
-/* ============================================================
-   NAVBAR
-============================================================ */
+/*NAVBAR*/
+
 #navbar {
   position: fixed;
   top: 0;
@@ -288,9 +283,7 @@ section {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ============================================================
-   HERO
-============================================================ */
+/*HERO*/
 #hero {
   min-height: 100vh;
   display: flex;
@@ -466,9 +459,8 @@ section {
   }
 }
 
-/* ============================================================
-   ABOUT
-============================================================ */
+/*ABOUT*/
+
 #about {
   background: var(--bg2);
 }
@@ -493,14 +485,14 @@ section {
   border-radius: 50%;
   padding: 3px;
   background: linear-gradient(135deg, var(--accent), var(--accent2), var(--green));
-  animation: rotateSlow 10s linear infinite;
+  /* animation: rotateSlow 10s linear infinite; */
 }
 
-@keyframes rotateSlow {
+/* @keyframes rotateSlow {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .avatar-inner {
   width: 100%;
@@ -510,8 +502,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4.5rem;
-  color: var(--accent2);
+  overflow: hidden;
+
+}
+
+.avatar-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .about-badges {
@@ -585,9 +584,8 @@ section {
   display: block;
 }
 
-/* ============================================================
-   SKILLS
-============================================================ */
+/* SKILLS */
+
 #skills {
   background: var(--bg);
 }
@@ -672,14 +670,13 @@ section {
   transform: translateY(-1px);
 }
 
-/* ============================================================
-   PROJECTS
-============================================================ */
+/* PROJECTS */
+
 #projects {
   background: var(--bg2);
 }
 
-/* -------- Carousel wrapper -------- */
+/* Carousel wrapper  */
 .projects-carousel-wrapper {
   position: relative;
 }
@@ -880,9 +877,7 @@ section {
   font-family: 'Fira Code', monospace;
 }
 
-/* ============================================================
-   EDUCATION / TIMELINE
-============================================================ */
+/* EDUCATION / TIMELINE  */
 #education {
   background: var(--bg);
 }
@@ -977,9 +972,8 @@ section {
   font-size: 0.78rem;
 }
 
-/* ============================================================
-   CONTACT
-============================================================ */
+/* CONTACT */
+
 #contact {
   background: var(--bg2);
 }
@@ -1127,9 +1121,7 @@ section {
   display: block;
 }
 
-/* ============================================================
-   FOOTER
-============================================================ */
+/* FOOTER */
 footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
@@ -1152,9 +1144,7 @@ footer strong {
   opacity: 0.7;
 }
 
-/* ============================================================
-   BACK TO TOP
-============================================================ */
+/* BACK TO TOP */
 .back-to-top {
   position: fixed;
   bottom: 28px;
@@ -1185,9 +1175,7 @@ footer strong {
   box-shadow: 0 8px 28px var(--glow);
 }
 
-/* ============================================================
-   ANIMATIONS
-============================================================ */
+/* ANIMATIONS */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -1211,9 +1199,7 @@ footer strong {
   transform: translateY(0);
 }
 
-/* ============================================================
-   RESPONSIVE
-============================================================ */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1228,8 +1214,13 @@ footer strong {
     justify-content: center;
   }
 
-  .carousel-btn.prev { left: -14px; }
-  .carousel-btn.next { right: -14px; }
+  .carousel-btn.prev {
+    left: -14px;
+  }
+
+  .carousel-btn.next {
+    right: -14px;
+  }
 }
 
 @media (max-width: 768px) {
